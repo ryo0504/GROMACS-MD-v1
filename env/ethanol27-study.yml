@@ -1,0 +1,20 @@
+# Separate study environment: keeps the existing gmx-md environment intact.
+name: gmx-ethanol27
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy=1.26
+  - rdkit
+  - matplotlib
+  - pyyaml
+  - jupyterlab
+  - ipykernel
+  - mdanalysis
+  - parmed
+  - ambertools=24
+  - acpype
+  - pytest
+  - pip:
+      - ase==3.29.0

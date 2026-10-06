@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdworkbench"
+version = "0.1.0"
+description = "Reproducible GROMACS classical MD workflows with explicit RESP inputs"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6"]
+
+[project.scripts]
+mdworkbench = "mdworkbench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires external software"]

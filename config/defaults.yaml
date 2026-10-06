@@ -1,0 +1,29 @@
+# Reference template only: never implicitly merged into a scientific system.
+system:
+  name: example
+  net_charge: 0
+  multiplicity: 1
+  random_seed: 20261004
+force_field:
+  family: gaff2
+  charge_model: resp
+resp:
+  qm_backend: external
+  method: HF
+  basis: 6-31G*
+  source_kind: charges
+  source_file: null
+  atom_order_confirmed: false
+  fit_inputs: []
+structure:
+  smiles: CCO
+  parameterization_file: structures/molecule.sdf
+mace:
+  use_geometry_optimization: false
+  model_file: null
+  device: cpu
+  fmax_eV_per_A: null
+  steps: null
+gromacs:
+  temperature_K: 298.15
+  pressure_bar: 1.0

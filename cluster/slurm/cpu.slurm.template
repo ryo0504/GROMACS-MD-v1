@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Replace ALL angle-bracket placeholders; no server resources are assumed.
+#SBATCH --job-name=gmx-cpu
+#SBATCH --partition=<PARTITION>
+#SBATCH --account=<ACCOUNT>
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=<CPUS>
+#SBATCH --mem=<MEMORY>
+#SBATCH --time=<WALLTIME>
+#SBATCH --output=<EXISTING_LOG_DIRECTORY>/%x-%j.out
+set -euo pipefail
+cd '<REPOSITORY>'
+# Site-specific module load / source GMXRC / micromamba activation here.
+export OMP_NUM_THREADS="$SLURM_CPUS_PER_TASK"
+# Set platform.local.yaml mdrun_args to resources for this build.
+./scripts/run/production.sh --run-dir '<RUN_DIRECTORY>' --platform config/platform.local.yaml

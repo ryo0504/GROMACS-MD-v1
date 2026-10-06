@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Replace placeholders and inspect GPU request syntax/site policy before submitting.
+#SBATCH --job-name=gmx-gpu
+#SBATCH --partition=<PARTITION>
+#SBATCH --account=<ACCOUNT>
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=<CPUS>
+#SBATCH --gres=gpu:<TYPE>:<COUNT>
+#SBATCH --mem=<MEMORY>
+#SBATCH --time=<WALLTIME>
+#SBATCH --output=<EXISTING_LOG_DIRECTORY>/%x-%j.out
+set -euo pipefail
+cd '<REPOSITORY>'
+# Site-specific modules/GMXRC/Micromamba activation here. No driver changes.
+export OMP_NUM_THREADS="$SLURM_CPUS_PER_TASK"
+nvidia-smi
+./scripts/run/production.sh --run-dir '<RUN_DIRECTORY>' --platform config/platform.local.yaml

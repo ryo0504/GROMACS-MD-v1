@@ -1,0 +1,20 @@
+# Host-specific pip supplement. Recreate the matching Conda lock FIRST.
+# Install with --no-deps; never apply across incompatible PyTorch backends.
+ConfigArgParse==1.8.0
+e3nn==0.4.4
+fsspec==2026.9.0
+gitdb==4.0.12
+GitPython==3.2.0
+lightning-utilities==0.15.3
+lmdb==3.0.0
+mace-torch==0.3.16
+matscipy==1.1.1
+openbabel-wheel==3.1.1.23
+opt-einsum-fx==0.1.4
+opt_einsum==3.4.0
+orjson==3.12.0
+prettytable==3.18.0
+python_hostlist==2.3.0
+smmap==5.0.3
+torch-ema==0.3
+torchmetrics==1.9.0

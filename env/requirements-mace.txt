@@ -1,0 +1,3 @@
+# Installed only after selecting the host's PyTorch backend.
+mace-torch==0.3.16
+matscipy==1.1.1

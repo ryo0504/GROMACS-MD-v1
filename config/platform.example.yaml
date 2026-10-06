@@ -1,0 +1,5 @@
+# Execution resources only; scientific conditions belong in system.yaml/MDP.
+# Set GMX_BIN to an external executable in the shell, after module/GMXRC setup.
+gromacs_executable: gmx
+launcher: []  # e.g. [srun] only after site policy and MPI build inspection
+mdrun_args: []  # e.g. [-ntomp, '8'] for a reviewed host

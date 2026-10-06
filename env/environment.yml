@@ -1,0 +1,24 @@
+name: gmx-md
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools
+  - jupyterlab
+  - ipykernel
+  - numpy>=1.26,<2
+  - scipy
+  - pandas
+  - matplotlib
+  - rdkit
+  - ase
+  - mdanalysis
+  - mdtraj>=1.10,<1.11
+  - parmed
+  - ambertools=24
+  - acpype
+  - pyyaml
+  - pytest
+  - pip:
+      - openbabel-wheel

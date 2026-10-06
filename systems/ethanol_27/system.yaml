@@ -1,0 +1,67 @@
+system:
+  name: ethanol_27
+  molecule_count: 27
+  atoms_per_molecule: 9
+  net_charge: 0
+  multiplicity: 1
+  random_seed: 42
+box:
+  length_A: 13.8
+  pbc: [true, true, true]
+placement:
+  grid: [3, 3, 3]
+  spacing_A: 4.6
+  rotation_deg: [-5.0, 5.0]
+  rng_seed: 42
+velocities:
+  temperature_K: 300.0
+  rng_seed: 42
+  # 3N-3 after removing system COM. GROMACS comm-mode=none uses 3N;
+  # its initial temperature will be 298.765 K. This difference is reported.
+  degrees_of_freedom: 726
+force_field:
+  family: null  # explicitly choose gaff or gaff2 after review
+  charge_model: resp
+resp:
+  qm_backend: null
+  method: null
+  basis: null
+  geometry_file: null
+  esp_conditions: null
+  fitting_conditions: null
+  source_kind: charges
+  source_file: null
+  atom_order_confirmed: false
+  fit_inputs: []
+structure:
+  parameterization_file: null
+  # topology atom i corresponds to ASE single-molecule atom ase_atom_order[i].
+  ase_atom_order: null
+nonbonded:
+  coulombtype: null
+  rcoulomb_nm: null
+  vdwtype: null
+  rvdw_nm: null
+  rlist_nm: null
+  dispersion_correction: null
+  adoption_reason: null
+review:
+  force_field_parameters_confirmed: false
+  # Inspect force_field_report.json, defaults/1-4 factors and RESP source.
+  max_force_kJ_mol_nm: null
+  catastrophic_distance_A: 0.5
+md:
+  ensemble: NVT
+  temperature_K: 300.0
+  timestep_fs: 0.5
+  steps: 600
+thermostat:
+  chain_length: 3
+  ase_tdamp_fs: 50.0
+  gromacs_tau_t_ps: 0.3141592654
+trajectory:
+  stride_steps: 5
+analysis:
+  production_start_exclusive_step: 200
+  r_max_A: 6.762
+  rdf_bins: 45
