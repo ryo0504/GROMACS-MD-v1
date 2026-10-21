@@ -1,5 +1,15 @@
 # このPCの環境構築記録
 
+## 2026-10-21：ローカルPySCF / RESP教材を追加
+
+同じ`gmx-md`環境・カーネルにPySCF 2.14.0 / geomeTRIC 1.1.1を追加しました。追加分は`env/requirements-qm.txt`で固定しています。H2のRHF/STO-3G計算が収束（−1.1167593074 Hartree）し、`pip check`も通過しました。
+
+エタノールNotebook第5節で、実際のRHF/6-31G*単分子構造最適化・625点の独自格子ESP・AmberTools 2段階RESP・GAFF2/ACPYPE変換を実行。第6節では0-step評価合格後、実際の600-step NVTと80frameのRDF解析まで完了しました。`comm-mode=none`に関する既知の警告1件だけを許可するユーザー承認済みの限定例外を適用し、ログを保存しています。別の警告・エラーは停止します。
+
+実行済みNotebookと検証資料は`runs/tutorial-pyscf-20261021/`、QM/RESPは`runs/ethanol27_pyscf/`、力場は`runs/ethanol27_pyscf_parameters/`、MDは`runs/ethanol27_pyscf_nvt/`に保存しました。カーネル名・interpreter・登録先は下記と同じです。既存カーネルを再起動し、更新したNotebookの第0〜4節を実行してから第5.1節へ進めます。
+
+詳しい条件・検証範囲は[教材README](../examples/ethanol_nvt_comparison/README.md)と[検証記録](../examples/ethanol_nvt_comparison/VALIDATION.md)を参照してください。以下は2026-10-05時点の構築記録であり、当時「QM/RESP未準備」とした状態は上記の追加で更新されています。
+
 構築日：2026-10-05（JST）。macOS26.6.2 / Apple Silicon arm64。
 
 ## 使用するカーネル

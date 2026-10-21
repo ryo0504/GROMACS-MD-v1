@@ -27,3 +27,16 @@ Linux CUDA/external MPIはprobe後に決めます。
 ## このPCの実環境
 
 2026-10-05に環境を同期対象外へ再構築しました。実パス、カーネル、確認結果は [current_pc_setup](../docs/current_pc_setup.md) を参照してください。scripts/setup/common.sh は `.local/host.env` がある場合に読み込みます。明示されたMAMBA_ROOT_PREFIX/GMX_BINを優先します。
+
+## 無料のローカルQM / RESP教材（任意追加）
+
+エタノールNotebookの第5節はPySCF 2.14.0とgeomeTRIC 1.1.1を使用します。既存`gmx-md`へ追加する場合は、repository rootで以下を実行し、Notebookのカーネルを再起動します。
+
+```bash
+source scripts/setup/common.sh
+"$MM" run -n gmx-md python -m pip install --prefer-binary -r env/requirements-qm.txt
+"$MM" run -n gmx-md python -m pip check
+"$MM" run -n gmx-md python -c 'import pyscf, geometric; print(pyscf.__version__, geometric.__version__)'
+```
+
+この追加は`env/requirements-qm.txt`に固定し、従来のConda lockを変更しません。古いlockで環境を再構築した場合は、上の追加操作も必要です。PySCF wheelは計算コードを含むため、純Pythonのみの実装ではありません。[PySCF公式導入手順](https://pyscf.org/user/install.html)も参照してください。

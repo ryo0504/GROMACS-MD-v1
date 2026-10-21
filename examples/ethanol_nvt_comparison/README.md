@@ -1,6 +1,6 @@
 # エタノール27分子：GROMACS NVTを学ぶ
 
-仕様書に対応する新しい教材です。まず **Notebookの第0〜4節を順番に実行**してください。初期構造・初期速度・RDFの演習はRESPやGROMACSがなくても実行できます。MDの結果は実際の出力があるときだけ表示します。
+仕様書に対応する教材です。まず **Notebookの第0〜4節を順番に実行**してください。初期構造・初期速度・RDFの演習はRESPやGROMACSがなくても実行できます。第5節には、このMacで無料のPySCFからRESP/GAFF2入力を作る手順を追加しました。MDの結果は実際の出力があるときだけ表示します。
 
 ## 学習の道筋
 
@@ -42,9 +42,35 @@ source scripts/setup/common.sh
 
 構造作成にはASE・RDKit・NumPy・PyYAML、Notebookにはmatplotlib、MD解析にはMDAnalysis・ParmEdが必要です。MACEの実行は不要です。buildのmetadataには実際のASE/MACE等のversionが保存されます。仕様のASE3.29.0/MACE0.3.16と異なる場合は再現の差として扱います。
 
-## RESPとは何を用意することか
+## このMacで第5節から進む（PySCFルート）
 
-RESPはQM計算で得た分子周囲の静電ポテンシャルに原子電荷をフィットする方法です。SMILESだけからこの仕様のRESP電荷が決まるわけではありません。現在はQM/RESP入力が未準備です。MDを実行済みとは扱いません。
+`Python (GROMACS MD Workbench)` / `gmx-md`を選び、Notebookの第0〜4節に続けて、第5.1〜5.7節を順番に実行します。このPCにはPySCF 2.14.0 / geomeTRIC 1.1.1を導入済みです。別環境への追加は[環境手順](../../env/README.md#無料のローカルqm--resp教材任意追加)を参照してください。
+
+1. 元のSDFの原子順を保持して、孤立エタノール1配座を気相RHF/6-31G*で構造最適化。
+2. 電子密度と核電荷から、4層の露出vdW表面上の静電ポテンシャルを計算。
+3. AmberToolsの`resp`で2段階fit。C結合Hの等価拘束とO/OHのHの固定条件を保存。
+4. RESP電荷を読み込んでGAFF2→Amber topology→ACPYPE変換。
+5. 座標・結合・元素・電荷による原子mapping、パラメータ、除外、1–4係数を検査。
+
+新しい出力先は次のとおりです。元の初期27分子の座標・速度と、未設定テンプレート`systems/ethanol_27/system.yaml`は保持します。
+
+| 保存先 | 内容 |
+|---|---|
+| `runs/ethanol27_pyscf/` | QM構造・波動関数・ESP・RESP原本、実行用config、点検report |
+| `runs/ethanol27_pyscf_parameters/` | GAFF2/Amber/ACPYPEの出力とmetadata |
+| `runs/ethanol27_pyscf_nvt/` | 第6節のprepare/preflight/MD出力 |
+
+再実行時は完了済みstageの入力・出力hashを検証して読み込みます。途中失敗や条件変更では、新しい`QM`/`PARAMS`/`RUN`名を指定してください。入力が一致しない既存出力を自動上書きしません。
+
+今回のESP格子はFibonacci球面、半径H=1.20/C=1.70/O=1.52 Å、倍率1.4/1.6/1.8/2.0、約1点/Å²の明示的な教育用レシピです。GaussianのMK格子と同一ではありません。RESPは重原子を抑制（Hの抑制なし）、stage 1の`qwt=0.0005`、stage 2の`qwt=0.001`。stage 2ではOとOHのHを固定し、CH3/CH2のHを各群内で等価にします。RESPの6桁丸めとAmberToolsの中性化に伴う微小差は原本とtopologyの両方に残して照合します。
+
+MD条件は半箱0.69 nmより小さいcutoff 0.60 nm、PME、LJ Cut-off、平均場分散補正EnerPresを、採用理由とともにrun-local configへ保存します。単配座RESP、振動解析なし、小cutoff、300 fsの教材であり、収束した液体物性を主張しません。
+
+実装：[pyscf_ethanol.py](../../src/mdworkbench/parameterization/pyscf_ethanol.py)。公式資料：[PySCF導入](https://pyscf.org/user/install.html)、[構造最適化](https://pyscf.org/user/geomopt.html)、[静電ポテンシャルの実装](https://pyscf.org/_modules/pyscf/tools/cubegen.html)、[Amber ESP書式](https://github.com/Amber-MD/AmberClassic/blob/main/src/antechamber/espgen.c)。
+
+## RESPとは何を用意することか（外部QM / 既存電荷ルート）
+
+RESPはQM計算で得た分子周囲の静電ポテンシャルに原子電荷をフィットする方法です。SMILESだけからこの仕様のRESP電荷が決まるわけではありません。上のPySCFルートを使わず外部計算を持ち込む場合は、以下の項目を実データで用意してください。未設定テンプレートを読むだけではMDは実行できません。
 
 `systems/ethanol_27/system.yaml` を編集し、以下を埋めます。`null` は未決定であり、仮の電荷やAM1-BCCに置換されません。
 
@@ -74,7 +100,14 @@ RESPはQM計算で得た分子周囲の静電ポテンシャルに原子電荷�
 "$MM" run -n gmx-md python -m mdworkbench.ethanol_benchmark analyze
 ```
 
-prepareは27分子へのtopology展開、全includeのsnapshot、RESP照合、結合mapping・質量・パラメータの検査、高精度GRO座標/速度、専用MDP、hash、parameter reportを生成します。GROの桁幅を広げ、nm・nm/psへ変換します。`grompp` に `-maxwarn` を渡しません。TPRとprocessed topologyはGROMACSが解釈した入力です。
+prepareは27分子へのtopology展開、全includeのsnapshot、RESP照合、結合mapping・質量・パラメータの検査、高精度GRO座標/速度、専用MDP、hash、parameter reportを生成します。GROの桁幅を広げ、nm・nm/psへ変換します。既定では`grompp`に`-maxwarn`を渡しません。TPRとprocessed topologyはGROMACSが解釈した入力です。
+
+**600-stepエタノール教材だけの確認済み例外（2026-10-21にユーザーが採用）**：GROMACS 2025.4は、意図した`comm-mode=none`に対し「重心運動を除去しないため数値誤差でCOMの運動エネルギーが増加し得る」という警告を出します。Notebook第6.3節の`allow_com_warning=True`、またはCLIの`run --allow-com-warning`は、まず通常のgromppを実行し、その既知の警告**1件だけ**が停止理由だと完全一致で確認したときに限り`-maxwarn 1`で再実行します。別の警告・topology警告・エラーがあれば停止します。再実行後も警告を照合し、両command/logと理由をmetadataに保存します。既定動作と汎用Workbenchでは引き続き警告を許可しません。
+
+```bash
+# PySCFルートのNotebookを使わず、生成済みrunをCLIから実行する場合
+"$MM" run -n gmx-md python -m mdworkbench.ethanol_benchmark run --run-dir runs/ethanol27_pyscf_nvt --allow-com-warning
+```
 
 preflightは元の初期座標で**0ステップのエネルギー/力評価**を行います。非有限値、巨大force、分子間の極端な接近を検出したら停止します。forceの閾値を超えることは、元配置では安全に開始できない可能性を意味します。閾値を引き上げる前に原因を調べます。EMを勝手に実施しません。preflight後も元の速度・座標から1本のNVTを開始し、preflight checkpointから継続しません。
 

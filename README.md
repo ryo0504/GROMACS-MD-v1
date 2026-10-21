@@ -69,7 +69,7 @@ mdworkbench prepare-run --config systems/example/system.yaml \
 `prepare-run` はatom/residue数・atom順序・total charge・box・includeを確認して入力をsnapshotします。
 includeが別の力場ディレクトリにある場合は `--include-dir /path/to/gromacs/share/gromacs/top` を追加します。
 temperature/pressure/seedはsystem.yamlからコピーしたMDPへ明示的に反映し、dt/cutoff/thermostat/barostat等は選択したMDPに従います。
-gromppのwarningは無視しません。NPT/productionへは前段のcheckpointを渡します。
+gromppのwarningは無視しません。専用600-stepエタノール教材の既知COM警告だけは、[内容照合付きの限定例外](examples/ethanol_nvt_comparison/README.md#入力が揃った後の操作)があります。NPT/productionへは前段のcheckpointを渡します。
 同時実行と出力上書きは拒否します。失敗runのログを確認し、修正した入力で新しいrunを準備してください。
 
 ## Linux server
@@ -114,4 +114,4 @@ Gitはmain branchで初期化済みです。最初のcommitとremote設定は利
 
 ## エタノール27分子のGROMACS習熟教材
 
-仕様書に対応する新しい [Ethanol NVT comparison tutorial](examples/ethanol_nvt_comparison/README.md) と [Notebook](examples/ethanol_nvt_comparison/notebooks/ethanol_comparison.ipynb) を追加しました。構造生成→速度→RDF演習→RESP点検→preflight→600-step連続NVT→結果の読み方を学べます。RESP等の科学入力が未準備でも前半の演習は実行できます。後半の実MDは入力が揃ってから実行します。汎用EM/NVT/NPT workflowとは別の専用教材です。
+仕様書に対応する [Ethanol NVT comparison tutorial](examples/ethanol_nvt_comparison/README.md) と [Notebook](examples/ethanol_nvt_comparison/notebooks/ethanol_comparison.ipynb) があります。構造生成→速度→RDF演習→RESP/GAFF点検→preflight→600-step連続NVT→結果の読み方を学べます。第5節には無料のPySCFによるQM/ESP→2段階RESP→GAFF2の実行手順を追加しました。RESP等の科学入力が未準備でも前半の演習は実行できます。汎用EM/NVT/NPT workflowとは別の専用教材です。

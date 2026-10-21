@@ -1,0 +1,3 @@
+# Optional local quantum-chemistry lesson; install inside the gmx-md kernel.
+pyscf==2.14.0
+geometric==1.1.1

@@ -241,7 +241,7 @@ def prepare(cfg, config_path, build_dir, single_top, output, include_dirs=()):
     return root
 
 
-def execute(root, args, input_text=None):
+def execute(root, args, input_text=None, check=True):
     from datetime import datetime, timezone
     from mdworkbench.gromacs.runner import detect_gromacs
     detected = detect_gromacs()
@@ -255,7 +255,8 @@ def execute(root, args, input_text=None):
     meta['commands'].append(entry)
     write_metadata(root/'metadata.json',meta)
     (root/(args[0] + '_' + str(len(meta['commands'])) + '.log')).write_text(process.stdout+process.stderr)
-    if process.returncode: raise RuntimeError(f'Command failed; inspect {root}: {command}')
+    if check and process.returncode: raise RuntimeError(f'Command failed; inspect {root}: {command}')
+    return process
 
 
 def verify_snapshot(root):
@@ -289,14 +290,47 @@ def preflight(root):
     if not safe: raise ValueError('指定された初期条件ではGROMACS古典力場計算を安全に開始できない可能性がある。EMは実施しません。')
 
 
-def run_nvt(root):
+COM_WARNING = ('You are not using center of mass motion removal (mdp option comm-mode), '
+               'numerical rounding errors can lead to build up of kinetic energy of the '
+               'center of mass')
+
+
+def only_com_warning(text, failed=False):
+    """A narrow opt-in exception: never accept topology or additional warnings."""
+    import re
+    messages = re.findall(r'^WARNING \d+ \[[^\n]*\]:\n(.*?)(?=\n\s*\n)', text, re.M | re.S)
+    if len(messages) != 1 or len(re.findall(r'^WARNING \d+', text, re.M)) != 1:
+        return False
+    if ' '.join(messages[0].split()) != COM_WARNING:
+        return False
+    if re.search(r'^ERROR\s+\d+', text, re.M):
+        return False
+    if failed:
+        return bool(re.search(r'Fatal error:\s*Too many warnings \(1\)', text))
+    return 'Fatal error:' not in text
+
+
+def run_nvt(root, allow_com_warning=False):
     root = Path(root).resolve(); verify_snapshot(root)
     report = json.loads((root/'preflight_report.json').read_text())
     if report['safe'] is not True: raise ValueError('Preflight must pass')
     for name,digest in report['output_hashes'].items():
         if hash_file(root/name)!=digest: raise ValueError('Preflight output changed')
     if (root/'nvt.tpr').exists(): raise ValueError('Run already attempted; prepare a new run')
-    execute(root, ['grompp','-f','nvt.mdp','-c','initial.gro','-p','topology/system.top','-o','nvt.tpr','-pp','nvt_processed.top','-po','nvt_processed.mdp'])
+    command = ['grompp','-f','nvt.mdp','-c','initial.gro','-p','topology/system.top','-o','nvt.tpr','-pp','nvt_processed.top','-po','nvt_processed.mdp']
+    process = execute(root, command, check=not allow_com_warning)
+    if allow_com_warning and process.returncode:
+        first_output = process.stdout + process.stderr
+        if not only_com_warning(first_output, failed=True):
+            raise RuntimeError('Unapproved grompp warning/error; no warning override applied')
+        retry = execute(root, [*command, '-maxwarn', '1'])
+        if not only_com_warning(retry.stdout + retry.stderr):
+            raise RuntimeError('grompp warning changed during retry; MD not started')
+        meta = json.loads((root/'metadata.json').read_text())
+        meta['warning_review'] = {'accepted_warning': COM_WARNING,
+            'scope': 'Only this warning; both grompp logs retained; any additional warning stops',
+            'reason': 'Explicit opt-in to preserve comm-mode=none in the 600-step comparison lesson'}
+        write_metadata(root/'metadata.json', meta)
     execute(root, ['mdrun','-deffnm','nvt','-nt','1'])
     execute(root, ['energy','-f','nvt.edr','-o','thermodynamics.xvg'], 'Temperature\nPotential\n0\n')
     meta=json.loads((root/'metadata.json').read_text()); meta['status']='completed'
@@ -347,6 +381,8 @@ def main():
     parser.add_argument('--include-dir',action='append',default=[])
     parser.add_argument('--run-dir',default='runs/ethanol27_nvt')
     parser.add_argument('--mace'); parser.add_argument('--mace-steps')
+    parser.add_argument('--allow-com-warning', action='store_true',
+                        help='Explicitly accept ONLY the reviewed comm-mode=none warning for NVT')
     args=parser.parse_args()
     try:
         if args.action=='build': print(build(config(args.config),args.output or args.build_dir))
@@ -361,7 +397,7 @@ def main():
             if not args.single_top: raise ValueError('--single-top is required')
             print(prepare(config(args.config),args.config,args.build_dir,args.single_top,args.output or args.run_dir,args.include_dir))
         elif args.action=='preflight': preflight(args.run_dir)
-        elif args.action=='run': run_nvt(args.run_dir)
+        elif args.action=='run': run_nvt(args.run_dir, allow_com_warning=args.allow_com_warning)
         else: analyze(args.run_dir,args.mace,args.mace_steps)
     except (ValueError, RuntimeError, FileNotFoundError) as error:
         parser.exit(2,f'STOP: {error}\n')

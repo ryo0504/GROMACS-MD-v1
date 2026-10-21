@@ -18,6 +18,51 @@ def test_frames():
         with pytest.raises(ValueError): production_indices(invalid)
 
 
+def test_com_warning_exception_rejects_every_other_warning_or_error():
+    from mdworkbench.ethanol_benchmark import COM_WARNING, only_com_warning
+    warning = 'WARNING 1 [file nvt.mdp]:\n  ' + COM_WARNING + '\n\n'
+    fatal = 'Fatal error:\nToo many warnings (1).\n'
+    assert only_com_warning(warning)
+    assert only_com_warning(warning + fatal, failed=True)
+    assert not only_com_warning(warning + fatal)
+    assert not only_com_warning(warning.replace('center of mass', 'topology'))
+    assert not only_com_warning(warning + warning.replace('WARNING 1', 'WARNING 2'))
+    assert not only_com_warning(warning + 'ERROR 1 [file topology.top]:\nMissing bond\n\n' + fatal, failed=True)
+    assert not only_com_warning(warning + 'Fatal error:\nMissing atom type\n', failed=True)
+
+
+@pytest.mark.parametrize('extra_warning', [False, True])
+def test_run_retries_only_reviewed_com_warning(tmp_path, monkeypatch, extra_warning):
+    from types import SimpleNamespace
+    from mdworkbench import ethanol_benchmark as b
+    (tmp_path/'preflight_report.json').write_text(json.dumps({'safe': True, 'output_hashes': {}}))
+    (tmp_path/'metadata.json').write_text(json.dumps({'commands': []}))
+    monkeypatch.setattr(b, 'verify_snapshot', lambda root: None)
+    message = 'WARNING 1 [file nvt.mdp]:\n  ' + b.COM_WARNING + '\n\n'
+    calls = []
+
+    def execute(root, args, input_text=None, check=True):
+        calls.append(args)
+        if len(calls) == 1:
+            output = message
+            if extra_warning:
+                output += 'WARNING 2 [file topology.top]:\nMissing parameter\n\n'
+            return SimpleNamespace(returncode=1, stdout=output,
+                stderr='Fatal error:\nToo many warnings (1).\n')
+        return SimpleNamespace(returncode=0, stdout=message if args[0] == 'grompp' else '', stderr='')
+
+    monkeypatch.setattr(b, 'execute', execute)
+    if extra_warning:
+        with pytest.raises(RuntimeError, match='Unapproved'):
+            b.run_nvt(tmp_path, allow_com_warning=True)
+        assert len(calls) == 1  # Neither override nor MD may run.
+    else:
+        b.run_nvt(tmp_path, allow_com_warning=True)
+        assert calls[1][-2:] == ['-maxwarn', '1']
+        assert [command[0] for command in calls] == ['grompp', 'grompp', 'mdrun', 'energy']
+        assert json.loads((tmp_path/'metadata.json').read_text())['warning_review']['accepted_warning'] == b.COM_WARNING
+
+
 def test_pair_exclusion_mic_normalization():
     # 27 centers at x=.1; 27 H at x=13.7. MIC O-H distance=.2 A.
     xyz = np.zeros((1,54,3)); xyz[0,:27,0]=.1; xyz[0,27:,0]=13.7

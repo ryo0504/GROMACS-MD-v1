@@ -37,7 +37,7 @@ C-rescaleはGROMACS 2021以降です。古いserver版では条件を勝手にfa
 ## Runの記録
 
 runごとに新しいdirectoryを用意します。`prepare-run` が科学入力とinclude graphを保存し、後からの入力改変をhashで検出します。
-gromppは各stageにprocessed.mdp/processed.topを出力し、warningを無視しません。
+gromppは各stageにprocessed.mdp/processed.topを出力し、warningを無視しません。専用600-stepエタノール教材の既知COM警告だけは、[内容照合付きの限定例外](../examples/ethanol_nvt_comparison/README.md#入力が揃った後の操作)があります。
 NVTはEM結果から開始しvelocityを生成、NPTはNVT checkpoint、productionはNPT checkpointを受け取ります。
 途中中断の自動resumeはv1では行いません。新しいrunで再実行するか、利用者がcheckpointとappend方針を明示してGROMACSで復旧し、metadataを保存してください。
 stage失敗時はmetadata command statusとgrompp.log/mdrun.logを確認してください。

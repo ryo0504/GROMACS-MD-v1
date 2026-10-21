@@ -1,5 +1,7 @@
 # GAFF / RESP
 
+エタノール教材の第5節には、無料のPySCFで気相RHF/6-31G*構造・独自表面格子ESPを計算し、AmberToolsで2段階RESPをfitする[ローカルQMルート](../examples/ethanol_nvt_comparison/README.md#このmacで第5節から進むpyscfルート)があります。以下は一般的な外部計算結果を受け入れる手順です。
+
 対象は有機低分子、簡単なoligomer/polymerモデルと有機混合物です。分子ごとのparameterを検証してからsystemを組み立てます。
 力場familyは `gaff` または `gaff2` を明示します。charge modelはv1では `resp` のみです。
 
