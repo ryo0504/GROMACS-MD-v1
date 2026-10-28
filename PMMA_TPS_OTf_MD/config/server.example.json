@@ -1,0 +1,15 @@
+{
+  "configured": false,
+  "nproc": null,
+  "memory_gb": null,
+  "pbs_memory_gb": null,
+  "queue": null,
+  "walltime": null,
+  "gaussian_setup": null,
+  "amber_setup": null,
+  "python_command": "python3",
+  "g16_command": "g16",
+  "gmx_command": "gmx",
+  "scratch_root": null,
+  "esp_method": "mk"
+}

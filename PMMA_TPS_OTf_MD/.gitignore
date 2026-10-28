@@ -1,0 +1,11 @@
+runs/
+transfer/
+server.local.json
+__pycache__/
+.pytest_cache/
+*.chk
+*.fchk
+*.rwf
+*.scr
+*.log
+*.out

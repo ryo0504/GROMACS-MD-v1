@@ -1,0 +1,6 @@
+%nprocshared=@NPROC@
+%mem=@MEM_GB@GB
+%chk=optimized.chk
+#p HF/6-31G* Geom=AllCheck Guess=Read SCF=(Conver=10,MaxCycle=100)
+ NoSymm Pop=MK IOp(6/33=2,6/41=4,6/42=6)
+

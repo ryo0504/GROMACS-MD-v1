@@ -1,0 +1,44 @@
+{
+  "qm_backend": "Gaussian16",
+  "method": "RHF",
+  "basis": "6-31G*",
+  "esp_grid": "Gaussian MK",
+  "iop": {
+    "6/33": 2,
+    "6/41": 4,
+    "6/42": 6
+  },
+  "geometry": "NoSymm; atom order fixed",
+  "resp_engine": "AmberTools resp",
+  "qwt_stage1": 0.0005,
+  "qwt_stage2": 0.001,
+  "ihfree": 1,
+  "pmma_templates": [
+    "head",
+    "internal",
+    "tail"
+  ],
+  "template_charges_e": [
+    0,
+    0,
+    0
+  ],
+  "input_conformers": {
+    "TPS": 3,
+    "OTF": 1,
+    "PMMA3": 3,
+    "PMMA5": 3
+  },
+  "pmma_fit_conformers": [
+    1,
+    2
+  ],
+  "pmma_evaluation_conformers": [
+    3
+  ],
+  "conformer_duplicate_rmsd_A": 0.1,
+  "approved_by_user": "2026-10-28: Gaussian16 MK ESP + RESP; change from v2 Fibonacci grid",
+  "gaussian_resources": "UNCONFIRMED; configure at the lab server",
+  "status": "PREPARED_NOT_RUN",
+  "native_resp_charge_precision_note": "qout may contain only 6 decimal places; strict neutrality checks stop if quantization error exceeds tolerance."
+}

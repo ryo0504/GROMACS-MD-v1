@@ -1,0 +1,58 @@
+{
+  "date_JST": "2026-10-28",
+  "tests": 9,
+  "passed": 7,
+  "skipped": 2,
+  "failures": 0,
+  "cases": [
+    {
+      "test": "test_structures_formula_stereo_and_mapping",
+      "status": "passed"
+    },
+    {
+      "test": "test_mdp_schedule_and_branch",
+      "status": "passed"
+    },
+    {
+      "test": "test_log_rejects_failed_or_unoptimized",
+      "status": "passed"
+    },
+    {
+      "test": "test_high_precision_gro_round_trip",
+      "status": "passed"
+    },
+    {
+      "test": "test_esp_round_trip_units",
+      "status": "passed"
+    },
+    {
+      "test": "test_native_resp_constraints_synthetic_only[OTF_single]",
+      "status": "passed"
+    },
+    {
+      "test": "test_native_resp_constraints_synthetic_only[OTF_multi]",
+      "status": "skipped",
+      "reason": "Host native RESP loader failed before reading input; repeat this native test on Linux."
+    },
+    {
+      "test": "test_native_resp_constraints_synthetic_only[PMMA]",
+      "status": "skipped",
+      "reason": "Host native RESP loader failed before reading input; repeat this native test on Linux."
+    },
+    {
+      "test": "test_unconfigured_server_rejected_and_render_bash_syntax",
+      "status": "passed"
+    }
+  ],
+  "warning": "ParmEd import emitted a NumPy binary-size compatibility warning; GRO round-trip assertions passed. Recheck imports on Linux.",
+  "native_runtime_limitation": "Intermittent Mac native RESP dyld startup failure before input reading. Re-run native tests on Linux.",
+  "not_validated": [
+    "Gaussian16",
+    "real molecule ESP/RESP",
+    "physical force-field quality",
+    "Amber-GROMACS energy agreement",
+    "PBS",
+    "mixed-system MD"
+  ],
+  "report_normalization": "Local absolute paths and host name normalized; test outcomes unchanged."
+}

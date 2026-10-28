@@ -1,0 +1,9 @@
+{
+  "approved": false,
+  "single_molecules": false,
+  "multiple_polymer_geometries": false,
+  "ion_pair_distances_and_orientations": false,
+  "status": "NOT_RUN",
+  "evidence_files": [],
+  "note": "One isolated-geometry check is only the first subtest. Do not approve the v2 conversion gate until the complete matrix and parameter review have real evidence."
+}

@@ -1,0 +1,117 @@
+{
+  "stages": {
+    "heat": {
+      "parent": "opt",
+      "init_step": 0,
+      "nsteps": 200000,
+      "dt_ps": 0.001,
+      "start_ps": 0.0,
+      "end_ps": 200.0,
+      "temperature_K": 300,
+      "pressure_bar": null,
+      "optional": false
+    },
+    "eq_1": {
+      "parent": "heat",
+      "init_step": 200000,
+      "nsteps": 500000,
+      "dt_ps": 0.001,
+      "start_ps": 200.0,
+      "end_ps": 700.0,
+      "temperature_K": 1400,
+      "pressure_bar": 100,
+      "optional": false
+    },
+    "eq_2": {
+      "parent": "eq_1",
+      "init_step": 700000,
+      "nsteps": 500000,
+      "dt_ps": 0.001,
+      "start_ps": 700.0,
+      "end_ps": 1200.0,
+      "temperature_K": 1400,
+      "pressure_bar": 10,
+      "optional": false
+    },
+    "eq_3": {
+      "parent": "eq_2",
+      "init_step": 1200000,
+      "nsteps": 5000000,
+      "dt_ps": 0.001,
+      "start_ps": 1200.0,
+      "end_ps": 6200.0,
+      "temperature_K": 1400,
+      "pressure_bar": 1,
+      "optional": false
+    },
+    "prod": {
+      "parent": "eq_3",
+      "init_step": 6200000,
+      "nsteps": 20000000,
+      "dt_ps": 0.001,
+      "start_ps": 6200.0,
+      "end_ps": 26200.0,
+      "temperature_K": 1400,
+      "pressure_bar": 1,
+      "optional": false
+    },
+    "cool": {
+      "parent": "prod",
+      "init_step": 26200000,
+      "nsteps": 11000000,
+      "dt_ps": 0.001,
+      "start_ps": 26200.0,
+      "end_ps": 37200.0,
+      "temperature_K": 1400,
+      "pressure_bar": 1,
+      "optional": false
+    },
+    "eq_rt": {
+      "parent": "cool",
+      "init_step": 37200000,
+      "nsteps": 20000000,
+      "dt_ps": 0.001,
+      "start_ps": 37200.0,
+      "end_ps": 57200.0,
+      "temperature_K": 300,
+      "pressure_bar": 1,
+      "optional": false
+    },
+    "prod_rt": {
+      "parent": "eq_rt",
+      "init_step": 57200000,
+      "nsteps": 20000000,
+      "dt_ps": 0.001,
+      "start_ps": 57200.0,
+      "end_ps": 77200.0,
+      "temperature_K": 300,
+      "pressure_bar": 1,
+      "optional": false
+    },
+    "nvt_rt": {
+      "parent": "eq_rt",
+      "init_step": 57200000,
+      "nsteps": 200000,
+      "dt_ps": 0.001,
+      "start_ps": 57200.0,
+      "end_ps": 57400.0,
+      "temperature_K": 300,
+      "pressure_bar": null,
+      "optional": true
+    },
+    "prod_rt_nvt": {
+      "parent": "nvt_rt",
+      "init_step": 57400000,
+      "nsteps": 20000000,
+      "dt_ps": 0.001,
+      "start_ps": 57400.0,
+      "end_ps": 77400.0,
+      "temperature_K": 300,
+      "pressure_bar": null,
+      "optional": true
+    }
+  },
+  "main_duration_ns": 77.2,
+  "with_rt_nvt_branch_duration_ns": 97.4,
+  "note": "If any upstream stage is extended, regenerate init-step/annealing-time; do not reuse stale MDP."
+}

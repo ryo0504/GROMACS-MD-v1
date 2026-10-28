@@ -1,0 +1,312 @@
+{
+  "models": {
+    "PMMA19": {
+      "degree": 19,
+      "formula": "C95H154O38",
+      "atoms": 287,
+      "formal_charge": 0,
+      "initial_conformers": [
+        {
+          "method": "MMFF94 (initial coordinates only)",
+          "status": 1
+        }
+      ],
+      "stereo": [
+        {
+          "index": 9,
+          "unit": 2,
+          "cip": "R"
+        },
+        {
+          "index": 16,
+          "unit": 3,
+          "cip": "R"
+        },
+        {
+          "index": 23,
+          "unit": 4,
+          "cip": "S"
+        },
+        {
+          "index": 30,
+          "unit": 5,
+          "cip": "R"
+        },
+        {
+          "index": 37,
+          "unit": 6,
+          "cip": "R"
+        },
+        {
+          "index": 44,
+          "unit": 7,
+          "cip": "R"
+        },
+        {
+          "index": 51,
+          "unit": 8,
+          "cip": "R"
+        },
+        {
+          "index": 58,
+          "unit": 9,
+          "cip": "R"
+        },
+        {
+          "index": 65,
+          "unit": 10,
+          "cip": "R"
+        },
+        {
+          "index": 72,
+          "unit": 11,
+          "cip": "S"
+        },
+        {
+          "index": 79,
+          "unit": 12,
+          "cip": "S"
+        },
+        {
+          "index": 86,
+          "unit": 13,
+          "cip": "S"
+        },
+        {
+          "index": 93,
+          "unit": 14,
+          "cip": "S"
+        },
+        {
+          "index": 100,
+          "unit": 15,
+          "cip": "S"
+        },
+        {
+          "index": 107,
+          "unit": 16,
+          "cip": "S"
+        },
+        {
+          "index": 114,
+          "unit": 17,
+          "cip": "S"
+        },
+        {
+          "index": 121,
+          "unit": 18,
+          "cip": "R"
+        },
+        {
+          "index": 128,
+          "unit": 19,
+          "cip": "R"
+        }
+      ]
+    },
+    "PMMA3": {
+      "degree": 3,
+      "formula": "C15H26O6",
+      "atoms": 47,
+      "formal_charge": 0,
+      "initial_conformers": [
+        {
+          "method": "MMFF94 (initial coordinates only)",
+          "status": 0
+        },
+        {
+          "method": "MMFF94 (initial coordinates only)",
+          "status": 0
+        },
+        {
+          "method": "MMFF94 (initial coordinates only)",
+          "status": 0
+        }
+      ],
+      "stereo": [
+        {
+          "index": 9,
+          "unit": 2,
+          "cip": "S"
+        },
+        {
+          "index": 16,
+          "unit": 3,
+          "cip": "R"
+        }
+      ]
+    },
+    "PMMA5": {
+      "degree": 5,
+      "formula": "C25H42O10",
+      "atoms": 77,
+      "formal_charge": 0,
+      "initial_conformers": [
+        {
+          "method": "MMFF94 (initial coordinates only)",
+          "status": 1
+        },
+        {
+          "method": "MMFF94 (initial coordinates only)",
+          "status": 1
+        },
+        {
+          "method": "MMFF94 (initial coordinates only)",
+          "status": 1
+        }
+      ],
+      "stereo": [
+        {
+          "index": 9,
+          "unit": 2,
+          "cip": "R"
+        },
+        {
+          "index": 16,
+          "unit": 3,
+          "cip": "S"
+        },
+        {
+          "index": 23,
+          "unit": 4,
+          "cip": "R"
+        },
+        {
+          "index": 30,
+          "unit": 5,
+          "cip": "R"
+        }
+      ]
+    },
+    "TPS": {
+      "degree": null,
+      "formula": "C18H15S+",
+      "atoms": 34,
+      "formal_charge": 1,
+      "initial_conformers": [
+        {
+          "method": "ETKDG only; not energy optimized",
+          "status": null
+        },
+        {
+          "method": "ETKDG only; not energy optimized",
+          "status": null
+        },
+        {
+          "method": "ETKDG only; not energy optimized",
+          "status": null
+        }
+      ],
+      "stereo": []
+    },
+    "OTF": {
+      "degree": null,
+      "formula": "CF3O3S-",
+      "atoms": 8,
+      "formal_charge": -1,
+      "initial_conformers": [
+        {
+          "method": "ETKDG only; not energy optimized",
+          "status": null
+        }
+      ],
+      "stereo": []
+    }
+  },
+  "jobs": [
+    {
+      "id": "PMMA3_c01",
+      "molecule": "PMMA3",
+      "charge": 0,
+      "multiplicity": 1,
+      "atom_count": 47,
+      "purpose": "fit",
+      "sdf": "structures/PMMA3_c01.sdf"
+    },
+    {
+      "id": "PMMA3_c02",
+      "molecule": "PMMA3",
+      "charge": 0,
+      "multiplicity": 1,
+      "atom_count": 47,
+      "purpose": "fit",
+      "sdf": "structures/PMMA3_c02.sdf"
+    },
+    {
+      "id": "PMMA3_c03",
+      "molecule": "PMMA3",
+      "charge": 0,
+      "multiplicity": 1,
+      "atom_count": 47,
+      "purpose": "evaluation",
+      "sdf": "structures/PMMA3_c03.sdf"
+    },
+    {
+      "id": "PMMA5_c01",
+      "molecule": "PMMA5",
+      "charge": 0,
+      "multiplicity": 1,
+      "atom_count": 77,
+      "purpose": "fit",
+      "sdf": "structures/PMMA5_c01.sdf"
+    },
+    {
+      "id": "PMMA5_c02",
+      "molecule": "PMMA5",
+      "charge": 0,
+      "multiplicity": 1,
+      "atom_count": 77,
+      "purpose": "fit",
+      "sdf": "structures/PMMA5_c02.sdf"
+    },
+    {
+      "id": "PMMA5_c03",
+      "molecule": "PMMA5",
+      "charge": 0,
+      "multiplicity": 1,
+      "atom_count": 77,
+      "purpose": "evaluation",
+      "sdf": "structures/PMMA5_c03.sdf"
+    },
+    {
+      "id": "TPS_c01",
+      "molecule": "TPS",
+      "charge": 1,
+      "multiplicity": 1,
+      "atom_count": 34,
+      "purpose": "fit",
+      "sdf": "structures/TPS_c01.sdf"
+    },
+    {
+      "id": "TPS_c02",
+      "molecule": "TPS",
+      "charge": 1,
+      "multiplicity": 1,
+      "atom_count": 34,
+      "purpose": "fit",
+      "sdf": "structures/TPS_c02.sdf"
+    },
+    {
+      "id": "TPS_c03",
+      "molecule": "TPS",
+      "charge": 1,
+      "multiplicity": 1,
+      "atom_count": 34,
+      "purpose": "fit",
+      "sdf": "structures/TPS_c03.sdf"
+    },
+    {
+      "id": "OTF_c01",
+      "molecule": "OTF",
+      "charge": -1,
+      "multiplicity": 1,
+      "atom_count": 8,
+      "purpose": "fit",
+      "sdf": "structures/OTF_c01.sdf"
+    }
+  ],
+  "rdkit_version": "2026.3.1",
+  "status": "INITIAL_STRUCTURES_ONLY; NO_QM_OR_RESP",
+  "seed": 43,
+  "note": "PMMA3/5/19 each have a fixed seeded sequence; they are not claimed to be identical tacticity environments."
+}

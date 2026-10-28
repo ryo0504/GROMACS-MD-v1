@@ -1,0 +1,5 @@
+# Preserve checksummed CSV bytes; their generator uses the CSV-standard CRLF.
+structures/*.csv -text whitespace=cr-at-eol
+# Blank terminators are part of the Gaussian/RESP input formats.
+*.gjf.in whitespace=-blank-at-eof
+*.in.template whitespace=-blank-at-eof

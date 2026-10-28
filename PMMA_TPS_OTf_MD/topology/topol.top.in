@@ -1,0 +1,14 @@
+; TEMPLATE: includes are generated only after real RESP/GAFF2 validation.
+#include "forcefield.itp"
+#include "atomtypes.itp"
+#include "PMMA19.itp"
+#include "TPS.itp"
+#include "OTF.itp"
+
+[ system ]
+PMMA19 TPS triflate v2
+
+[ molecules ]
+PMMA19 100
+TPS 83
+OTF 83

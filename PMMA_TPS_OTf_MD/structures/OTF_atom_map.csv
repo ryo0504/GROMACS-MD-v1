@@ -1,0 +1,9 @@
+index,element,atomic_number,atom_name,unit,template,role,equivalence_key,stage2_free,formal_charge,cip
+1,O,8,O1,1,OTF,O1,OTF:equivalent_O,False,0,
+2,S,16,S2,1,OTF,S2,OTF:sym7,False,0,
+3,O,8,O3,1,OTF,O3,OTF:equivalent_O,False,0,
+4,O,8,O4,1,OTF,O4,OTF:equivalent_O,False,-1,
+5,C,6,C5,1,OTF,C5,OTF:sym6,False,0,
+6,F,9,F6,1,OTF,F6,OTF:equivalent_F,False,0,
+7,F,9,F7,1,OTF,F7,OTF:equivalent_F,False,0,
+8,F,9,F8,1,OTF,F8,OTF:equivalent_F,False,0,

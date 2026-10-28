@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "polymer": "PMMA19",
+  "counts": {
+    "PMMA19": 100,
+    "TPS": 83,
+    "OTF": 83
+  },
+  "initial_box_nm": [
+    10.0,
+    10.0,
+    10.0
+  ],
+  "force_field": "gaff2",
+  "charge_model": "RESP",
+  "charge_scale": 1.0,
+  "net_charge": 0,
+  "expected_atoms": 32186,
+  "insert_seeds": [
+    1,
+    1,
+    1
+  ],
+  "forcefield_status": "NOT_GENERATED",
+  "qm_backend": "Gaussian16",
+  "esp_method": "mk"
+}

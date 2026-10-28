@@ -1,0 +1,15 @@
+{
+  "group": "OTF",
+  "jobs": [
+    "OTF_c01"
+  ],
+  "variable_keys": [
+    "OTF:equivalent_F",
+    "OTF:equivalent_O",
+    "OTF:sym6",
+    "OTF:sym7"
+  ],
+  "neutral_template_rows": [],
+  "status": "INPUT_TEMPLATE_ONLY; weights regenerated from real ESP point counts",
+  "note": "-99 is an Amber RESP control sentinel, not a physical molecular charge."
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "index": 1,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O1",
+    "unit": 1,
+    "template": "OTF",
+    "role": "O1",
+    "equivalence_key": "OTF:equivalent_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      2
+    ]
+  },
+  {
+    "index": 2,
+    "element": "S",
+    "atomic_number": 16,
+    "atom_name": "S2",
+    "unit": 1,
+    "template": "OTF",
+    "role": "S2",
+    "equivalence_key": "OTF:sym7",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      1,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "index": 3,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O3",
+    "unit": 1,
+    "template": "OTF",
+    "role": "O3",
+    "equivalence_key": "OTF:equivalent_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      2
+    ]
+  },
+  {
+    "index": 4,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O4",
+    "unit": 1,
+    "template": "OTF",
+    "role": "O4",
+    "equivalence_key": "OTF:equivalent_O",
+    "stage2_free": false,
+    "formal_charge": -1,
+    "cip": null,
+    "neighbors": [
+      2
+    ]
+  },
+  {
+    "index": 5,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C5",
+    "unit": 1,
+    "template": "OTF",
+    "role": "C5",
+    "equivalence_key": "OTF:sym6",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      2,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "index": 6,
+    "element": "F",
+    "atomic_number": 9,
+    "atom_name": "F6",
+    "unit": 1,
+    "template": "OTF",
+    "role": "F6",
+    "equivalence_key": "OTF:equivalent_F",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      5
+    ]
+  },
+  {
+    "index": 7,
+    "element": "F",
+    "atomic_number": 9,
+    "atom_name": "F7",
+    "unit": 1,
+    "template": "OTF",
+    "role": "F7",
+    "equivalence_key": "OTF:equivalent_F",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      5
+    ]
+  },
+  {
+    "index": 8,
+    "element": "F",
+    "atomic_number": 9,
+    "atom_name": "F8",
+    "unit": 1,
+    "template": "OTF",
+    "role": "F8",
+    "equivalence_key": "OTF:equivalent_F",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      5
+    ]
+  }
+]

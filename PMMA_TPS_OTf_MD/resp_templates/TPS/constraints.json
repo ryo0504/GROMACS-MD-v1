@@ -1,0 +1,21 @@
+{
+  "group": "TPS",
+  "jobs": [
+    "TPS_c01",
+    "TPS_c02",
+    "TPS_c03"
+  ],
+  "variable_keys": [
+    "TPS:sym0",
+    "TPS:sym15",
+    "TPS:sym18",
+    "TPS:sym24",
+    "TPS:sym3",
+    "TPS:sym30",
+    "TPS:sym33",
+    "TPS:sym9"
+  ],
+  "neutral_template_rows": [],
+  "status": "INPUT_TEMPLATE_ONLY; weights regenerated from real ESP point counts",
+  "note": "-99 is an Amber RESP control sentinel, not a physical molecular charge."
+}

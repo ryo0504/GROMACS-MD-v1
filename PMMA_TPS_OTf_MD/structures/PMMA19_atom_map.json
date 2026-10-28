@@ -1,0 +1,4879 @@
+[
+  {
+    "index": 1,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C1",
+    "unit": 1,
+    "template": "head",
+    "role": "backbone_head_C",
+    "equivalence_key": "head:backbone_head_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      2,
+      134,
+      135,
+      136
+    ]
+  },
+  {
+    "index": 2,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C2",
+    "unit": 1,
+    "template": "head",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "head:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      1,
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "index": 3,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C3",
+    "unit": 1,
+    "template": "head",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "head:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      2,
+      137,
+      138,
+      139
+    ]
+  },
+  {
+    "index": 4,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C4",
+    "unit": 1,
+    "template": "head",
+    "role": "carbonyl_C",
+    "equivalence_key": "head:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      2,
+      5,
+      6
+    ]
+  },
+  {
+    "index": 5,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O5",
+    "unit": 1,
+    "template": "head",
+    "role": "carbonyl_O",
+    "equivalence_key": "head:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      4
+    ]
+  },
+  {
+    "index": 6,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O6",
+    "unit": 1,
+    "template": "head",
+    "role": "ester_O",
+    "equivalence_key": "head:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      4,
+      7
+    ]
+  },
+  {
+    "index": 7,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C7",
+    "unit": 1,
+    "template": "head",
+    "role": "methoxy_C",
+    "equivalence_key": "head:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      6,
+      140,
+      141,
+      142
+    ]
+  },
+  {
+    "index": 8,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C8",
+    "unit": 2,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      9,
+      2,
+      143,
+      144
+    ]
+  },
+  {
+    "index": 9,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C9",
+    "unit": 2,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      8,
+      10,
+      11,
+      15
+    ]
+  },
+  {
+    "index": 10,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C10",
+    "unit": 2,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      9,
+      145,
+      146,
+      147
+    ]
+  },
+  {
+    "index": 11,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C11",
+    "unit": 2,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      9,
+      12,
+      13
+    ]
+  },
+  {
+    "index": 12,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O12",
+    "unit": 2,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      11
+    ]
+  },
+  {
+    "index": 13,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O13",
+    "unit": 2,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      11,
+      14
+    ]
+  },
+  {
+    "index": 14,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C14",
+    "unit": 2,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      13,
+      148,
+      149,
+      150
+    ]
+  },
+  {
+    "index": 15,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C15",
+    "unit": 3,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      16,
+      9,
+      151,
+      152
+    ]
+  },
+  {
+    "index": 16,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C16",
+    "unit": 3,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      15,
+      17,
+      18,
+      22
+    ]
+  },
+  {
+    "index": 17,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C17",
+    "unit": 3,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      16,
+      153,
+      154,
+      155
+    ]
+  },
+  {
+    "index": 18,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C18",
+    "unit": 3,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      16,
+      19,
+      20
+    ]
+  },
+  {
+    "index": 19,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O19",
+    "unit": 3,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      18
+    ]
+  },
+  {
+    "index": 20,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O20",
+    "unit": 3,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      18,
+      21
+    ]
+  },
+  {
+    "index": 21,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C21",
+    "unit": 3,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      20,
+      156,
+      157,
+      158
+    ]
+  },
+  {
+    "index": 22,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C22",
+    "unit": 4,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      23,
+      16,
+      159,
+      160
+    ]
+  },
+  {
+    "index": 23,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C23",
+    "unit": 4,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "S",
+    "neighbors": [
+      22,
+      24,
+      25,
+      29
+    ]
+  },
+  {
+    "index": 24,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C24",
+    "unit": 4,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      23,
+      161,
+      162,
+      163
+    ]
+  },
+  {
+    "index": 25,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C25",
+    "unit": 4,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      23,
+      26,
+      27
+    ]
+  },
+  {
+    "index": 26,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O26",
+    "unit": 4,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      25
+    ]
+  },
+  {
+    "index": 27,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O27",
+    "unit": 4,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      25,
+      28
+    ]
+  },
+  {
+    "index": 28,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C28",
+    "unit": 4,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      27,
+      164,
+      165,
+      166
+    ]
+  },
+  {
+    "index": 29,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C29",
+    "unit": 5,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      30,
+      23,
+      167,
+      168
+    ]
+  },
+  {
+    "index": 30,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C30",
+    "unit": 5,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      29,
+      31,
+      32,
+      36
+    ]
+  },
+  {
+    "index": 31,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C31",
+    "unit": 5,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      30,
+      169,
+      170,
+      171
+    ]
+  },
+  {
+    "index": 32,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C32",
+    "unit": 5,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      30,
+      33,
+      34
+    ]
+  },
+  {
+    "index": 33,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O33",
+    "unit": 5,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      32
+    ]
+  },
+  {
+    "index": 34,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O34",
+    "unit": 5,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      32,
+      35
+    ]
+  },
+  {
+    "index": 35,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C35",
+    "unit": 5,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      34,
+      172,
+      173,
+      174
+    ]
+  },
+  {
+    "index": 36,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C36",
+    "unit": 6,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      37,
+      30,
+      175,
+      176
+    ]
+  },
+  {
+    "index": 37,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C37",
+    "unit": 6,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      36,
+      38,
+      39,
+      43
+    ]
+  },
+  {
+    "index": 38,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C38",
+    "unit": 6,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      37,
+      177,
+      178,
+      179
+    ]
+  },
+  {
+    "index": 39,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C39",
+    "unit": 6,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      37,
+      40,
+      41
+    ]
+  },
+  {
+    "index": 40,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O40",
+    "unit": 6,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      39
+    ]
+  },
+  {
+    "index": 41,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O41",
+    "unit": 6,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      39,
+      42
+    ]
+  },
+  {
+    "index": 42,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C42",
+    "unit": 6,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      41,
+      180,
+      181,
+      182
+    ]
+  },
+  {
+    "index": 43,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C43",
+    "unit": 7,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      44,
+      37,
+      183,
+      184
+    ]
+  },
+  {
+    "index": 44,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C44",
+    "unit": 7,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      43,
+      45,
+      46,
+      50
+    ]
+  },
+  {
+    "index": 45,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C45",
+    "unit": 7,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      44,
+      185,
+      186,
+      187
+    ]
+  },
+  {
+    "index": 46,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C46",
+    "unit": 7,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      44,
+      47,
+      48
+    ]
+  },
+  {
+    "index": 47,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O47",
+    "unit": 7,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      46
+    ]
+  },
+  {
+    "index": 48,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O48",
+    "unit": 7,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      46,
+      49
+    ]
+  },
+  {
+    "index": 49,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C49",
+    "unit": 7,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      48,
+      188,
+      189,
+      190
+    ]
+  },
+  {
+    "index": 50,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C50",
+    "unit": 8,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      51,
+      44,
+      191,
+      192
+    ]
+  },
+  {
+    "index": 51,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C51",
+    "unit": 8,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      50,
+      52,
+      53,
+      57
+    ]
+  },
+  {
+    "index": 52,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C52",
+    "unit": 8,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      51,
+      193,
+      194,
+      195
+    ]
+  },
+  {
+    "index": 53,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C53",
+    "unit": 8,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      51,
+      54,
+      55
+    ]
+  },
+  {
+    "index": 54,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O54",
+    "unit": 8,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      53
+    ]
+  },
+  {
+    "index": 55,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O55",
+    "unit": 8,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      53,
+      56
+    ]
+  },
+  {
+    "index": 56,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C56",
+    "unit": 8,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      55,
+      196,
+      197,
+      198
+    ]
+  },
+  {
+    "index": 57,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C57",
+    "unit": 9,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      58,
+      51,
+      199,
+      200
+    ]
+  },
+  {
+    "index": 58,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C58",
+    "unit": 9,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      57,
+      59,
+      60,
+      64
+    ]
+  },
+  {
+    "index": 59,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C59",
+    "unit": 9,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      58,
+      201,
+      202,
+      203
+    ]
+  },
+  {
+    "index": 60,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C60",
+    "unit": 9,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      58,
+      61,
+      62
+    ]
+  },
+  {
+    "index": 61,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O61",
+    "unit": 9,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      60
+    ]
+  },
+  {
+    "index": 62,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O62",
+    "unit": 9,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      60,
+      63
+    ]
+  },
+  {
+    "index": 63,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C63",
+    "unit": 9,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      62,
+      204,
+      205,
+      206
+    ]
+  },
+  {
+    "index": 64,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C64",
+    "unit": 10,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      65,
+      58,
+      207,
+      208
+    ]
+  },
+  {
+    "index": 65,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C65",
+    "unit": 10,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      64,
+      66,
+      67,
+      71
+    ]
+  },
+  {
+    "index": 66,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C66",
+    "unit": 10,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      65,
+      209,
+      210,
+      211
+    ]
+  },
+  {
+    "index": 67,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C67",
+    "unit": 10,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      65,
+      68,
+      69
+    ]
+  },
+  {
+    "index": 68,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O68",
+    "unit": 10,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      67
+    ]
+  },
+  {
+    "index": 69,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O69",
+    "unit": 10,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      67,
+      70
+    ]
+  },
+  {
+    "index": 70,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C70",
+    "unit": 10,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      69,
+      212,
+      213,
+      214
+    ]
+  },
+  {
+    "index": 71,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C71",
+    "unit": 11,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      72,
+      65,
+      215,
+      216
+    ]
+  },
+  {
+    "index": 72,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C72",
+    "unit": 11,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "S",
+    "neighbors": [
+      71,
+      73,
+      74,
+      78
+    ]
+  },
+  {
+    "index": 73,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C73",
+    "unit": 11,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      72,
+      217,
+      218,
+      219
+    ]
+  },
+  {
+    "index": 74,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C74",
+    "unit": 11,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      72,
+      75,
+      76
+    ]
+  },
+  {
+    "index": 75,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O75",
+    "unit": 11,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      74
+    ]
+  },
+  {
+    "index": 76,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O76",
+    "unit": 11,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      74,
+      77
+    ]
+  },
+  {
+    "index": 77,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C77",
+    "unit": 11,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      76,
+      220,
+      221,
+      222
+    ]
+  },
+  {
+    "index": 78,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C78",
+    "unit": 12,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      79,
+      72,
+      223,
+      224
+    ]
+  },
+  {
+    "index": 79,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C79",
+    "unit": 12,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "S",
+    "neighbors": [
+      78,
+      80,
+      81,
+      85
+    ]
+  },
+  {
+    "index": 80,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C80",
+    "unit": 12,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      79,
+      225,
+      226,
+      227
+    ]
+  },
+  {
+    "index": 81,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C81",
+    "unit": 12,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      79,
+      82,
+      83
+    ]
+  },
+  {
+    "index": 82,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O82",
+    "unit": 12,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      81
+    ]
+  },
+  {
+    "index": 83,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O83",
+    "unit": 12,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      81,
+      84
+    ]
+  },
+  {
+    "index": 84,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C84",
+    "unit": 12,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      83,
+      228,
+      229,
+      230
+    ]
+  },
+  {
+    "index": 85,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C85",
+    "unit": 13,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      86,
+      79,
+      231,
+      232
+    ]
+  },
+  {
+    "index": 86,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C86",
+    "unit": 13,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "S",
+    "neighbors": [
+      85,
+      87,
+      88,
+      92
+    ]
+  },
+  {
+    "index": 87,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C87",
+    "unit": 13,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      86,
+      233,
+      234,
+      235
+    ]
+  },
+  {
+    "index": 88,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C88",
+    "unit": 13,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      86,
+      89,
+      90
+    ]
+  },
+  {
+    "index": 89,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O89",
+    "unit": 13,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      88
+    ]
+  },
+  {
+    "index": 90,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O90",
+    "unit": 13,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      88,
+      91
+    ]
+  },
+  {
+    "index": 91,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C91",
+    "unit": 13,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      90,
+      236,
+      237,
+      238
+    ]
+  },
+  {
+    "index": 92,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C92",
+    "unit": 14,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      93,
+      86,
+      239,
+      240
+    ]
+  },
+  {
+    "index": 93,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C93",
+    "unit": 14,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "S",
+    "neighbors": [
+      92,
+      94,
+      95,
+      99
+    ]
+  },
+  {
+    "index": 94,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C94",
+    "unit": 14,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      93,
+      241,
+      242,
+      243
+    ]
+  },
+  {
+    "index": 95,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C95",
+    "unit": 14,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      93,
+      96,
+      97
+    ]
+  },
+  {
+    "index": 96,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O96",
+    "unit": 14,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      95
+    ]
+  },
+  {
+    "index": 97,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O97",
+    "unit": 14,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      95,
+      98
+    ]
+  },
+  {
+    "index": 98,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C98",
+    "unit": 14,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      97,
+      244,
+      245,
+      246
+    ]
+  },
+  {
+    "index": 99,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C99",
+    "unit": 15,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      100,
+      93,
+      247,
+      248
+    ]
+  },
+  {
+    "index": 100,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C100",
+    "unit": 15,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "S",
+    "neighbors": [
+      99,
+      101,
+      102,
+      106
+    ]
+  },
+  {
+    "index": 101,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C101",
+    "unit": 15,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      100,
+      249,
+      250,
+      251
+    ]
+  },
+  {
+    "index": 102,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C102",
+    "unit": 15,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      100,
+      103,
+      104
+    ]
+  },
+  {
+    "index": 103,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O103",
+    "unit": 15,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      102
+    ]
+  },
+  {
+    "index": 104,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O104",
+    "unit": 15,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      102,
+      105
+    ]
+  },
+  {
+    "index": 105,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C105",
+    "unit": 15,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      104,
+      252,
+      253,
+      254
+    ]
+  },
+  {
+    "index": 106,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C106",
+    "unit": 16,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      107,
+      100,
+      255,
+      256
+    ]
+  },
+  {
+    "index": 107,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C107",
+    "unit": 16,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "S",
+    "neighbors": [
+      106,
+      108,
+      109,
+      113
+    ]
+  },
+  {
+    "index": 108,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C108",
+    "unit": 16,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      107,
+      257,
+      258,
+      259
+    ]
+  },
+  {
+    "index": 109,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C109",
+    "unit": 16,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      107,
+      110,
+      111
+    ]
+  },
+  {
+    "index": 110,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O110",
+    "unit": 16,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      109
+    ]
+  },
+  {
+    "index": 111,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O111",
+    "unit": 16,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      109,
+      112
+    ]
+  },
+  {
+    "index": 112,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C112",
+    "unit": 16,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      111,
+      260,
+      261,
+      262
+    ]
+  },
+  {
+    "index": 113,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C113",
+    "unit": 17,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      114,
+      107,
+      263,
+      264
+    ]
+  },
+  {
+    "index": 114,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C114",
+    "unit": 17,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "S",
+    "neighbors": [
+      113,
+      115,
+      116,
+      120
+    ]
+  },
+  {
+    "index": 115,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C115",
+    "unit": 17,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      114,
+      265,
+      266,
+      267
+    ]
+  },
+  {
+    "index": 116,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C116",
+    "unit": 17,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      114,
+      117,
+      118
+    ]
+  },
+  {
+    "index": 117,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O117",
+    "unit": 17,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      116
+    ]
+  },
+  {
+    "index": 118,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O118",
+    "unit": 17,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      116,
+      119
+    ]
+  },
+  {
+    "index": 119,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C119",
+    "unit": 17,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      118,
+      268,
+      269,
+      270
+    ]
+  },
+  {
+    "index": 120,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C120",
+    "unit": 18,
+    "template": "internal",
+    "role": "backbone_head_C",
+    "equivalence_key": "internal:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      121,
+      114,
+      271,
+      272
+    ]
+  },
+  {
+    "index": 121,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C121",
+    "unit": 18,
+    "template": "internal",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "internal:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      120,
+      122,
+      123,
+      127
+    ]
+  },
+  {
+    "index": 122,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C122",
+    "unit": 18,
+    "template": "internal",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "internal:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      121,
+      273,
+      274,
+      275
+    ]
+  },
+  {
+    "index": 123,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C123",
+    "unit": 18,
+    "template": "internal",
+    "role": "carbonyl_C",
+    "equivalence_key": "internal:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      121,
+      124,
+      125
+    ]
+  },
+  {
+    "index": 124,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O124",
+    "unit": 18,
+    "template": "internal",
+    "role": "carbonyl_O",
+    "equivalence_key": "internal:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      123
+    ]
+  },
+  {
+    "index": 125,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O125",
+    "unit": 18,
+    "template": "internal",
+    "role": "ester_O",
+    "equivalence_key": "internal:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      123,
+      126
+    ]
+  },
+  {
+    "index": 126,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C126",
+    "unit": 18,
+    "template": "internal",
+    "role": "methoxy_C",
+    "equivalence_key": "internal:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      125,
+      276,
+      277,
+      278
+    ]
+  },
+  {
+    "index": 127,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C127",
+    "unit": 19,
+    "template": "tail",
+    "role": "backbone_head_C",
+    "equivalence_key": "tail:backbone_head_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      128,
+      121,
+      279,
+      280
+    ]
+  },
+  {
+    "index": 128,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C128",
+    "unit": 19,
+    "template": "tail",
+    "role": "backbone_substituted_C",
+    "equivalence_key": "tail:backbone_substituted_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": "R",
+    "neighbors": [
+      127,
+      129,
+      130,
+      281
+    ]
+  },
+  {
+    "index": 129,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C129",
+    "unit": 19,
+    "template": "tail",
+    "role": "alpha_methyl_C",
+    "equivalence_key": "tail:alpha_methyl_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      128,
+      282,
+      283,
+      284
+    ]
+  },
+  {
+    "index": 130,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C130",
+    "unit": 19,
+    "template": "tail",
+    "role": "carbonyl_C",
+    "equivalence_key": "tail:carbonyl_C",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      128,
+      131,
+      132
+    ]
+  },
+  {
+    "index": 131,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O131",
+    "unit": 19,
+    "template": "tail",
+    "role": "carbonyl_O",
+    "equivalence_key": "tail:carbonyl_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      130
+    ]
+  },
+  {
+    "index": 132,
+    "element": "O",
+    "atomic_number": 8,
+    "atom_name": "O132",
+    "unit": 19,
+    "template": "tail",
+    "role": "ester_O",
+    "equivalence_key": "tail:ester_O",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      130,
+      133
+    ]
+  },
+  {
+    "index": 133,
+    "element": "C",
+    "atomic_number": 6,
+    "atom_name": "C133",
+    "unit": 19,
+    "template": "tail",
+    "role": "methoxy_C",
+    "equivalence_key": "tail:methoxy_C",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      132,
+      285,
+      286,
+      287
+    ]
+  },
+  {
+    "index": 134,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H134",
+    "unit": 1,
+    "template": "head",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "head:backbone_head_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      1
+    ]
+  },
+  {
+    "index": 135,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H135",
+    "unit": 1,
+    "template": "head",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "head:backbone_head_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      1
+    ]
+  },
+  {
+    "index": 136,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H136",
+    "unit": 1,
+    "template": "head",
+    "role": "backbone_head_C_H3",
+    "equivalence_key": "head:backbone_head_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      1
+    ]
+  },
+  {
+    "index": 137,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H137",
+    "unit": 1,
+    "template": "head",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "head:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      3
+    ]
+  },
+  {
+    "index": 138,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H138",
+    "unit": 1,
+    "template": "head",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "head:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      3
+    ]
+  },
+  {
+    "index": 139,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H139",
+    "unit": 1,
+    "template": "head",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "head:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      3
+    ]
+  },
+  {
+    "index": 140,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H140",
+    "unit": 1,
+    "template": "head",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "head:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      7
+    ]
+  },
+  {
+    "index": 141,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H141",
+    "unit": 1,
+    "template": "head",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "head:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      7
+    ]
+  },
+  {
+    "index": 142,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H142",
+    "unit": 1,
+    "template": "head",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "head:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      7
+    ]
+  },
+  {
+    "index": 143,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H143",
+    "unit": 2,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      8
+    ]
+  },
+  {
+    "index": 144,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H144",
+    "unit": 2,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      8
+    ]
+  },
+  {
+    "index": 145,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H145",
+    "unit": 2,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      10
+    ]
+  },
+  {
+    "index": 146,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H146",
+    "unit": 2,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      10
+    ]
+  },
+  {
+    "index": 147,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H147",
+    "unit": 2,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      10
+    ]
+  },
+  {
+    "index": 148,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H148",
+    "unit": 2,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      14
+    ]
+  },
+  {
+    "index": 149,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H149",
+    "unit": 2,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      14
+    ]
+  },
+  {
+    "index": 150,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H150",
+    "unit": 2,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      14
+    ]
+  },
+  {
+    "index": 151,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H151",
+    "unit": 3,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      15
+    ]
+  },
+  {
+    "index": 152,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H152",
+    "unit": 3,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      15
+    ]
+  },
+  {
+    "index": 153,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H153",
+    "unit": 3,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      17
+    ]
+  },
+  {
+    "index": 154,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H154",
+    "unit": 3,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      17
+    ]
+  },
+  {
+    "index": 155,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H155",
+    "unit": 3,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      17
+    ]
+  },
+  {
+    "index": 156,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H156",
+    "unit": 3,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      21
+    ]
+  },
+  {
+    "index": 157,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H157",
+    "unit": 3,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      21
+    ]
+  },
+  {
+    "index": 158,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H158",
+    "unit": 3,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      21
+    ]
+  },
+  {
+    "index": 159,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H159",
+    "unit": 4,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      22
+    ]
+  },
+  {
+    "index": 160,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H160",
+    "unit": 4,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      22
+    ]
+  },
+  {
+    "index": 161,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H161",
+    "unit": 4,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      24
+    ]
+  },
+  {
+    "index": 162,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H162",
+    "unit": 4,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      24
+    ]
+  },
+  {
+    "index": 163,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H163",
+    "unit": 4,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      24
+    ]
+  },
+  {
+    "index": 164,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H164",
+    "unit": 4,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      28
+    ]
+  },
+  {
+    "index": 165,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H165",
+    "unit": 4,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      28
+    ]
+  },
+  {
+    "index": 166,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H166",
+    "unit": 4,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      28
+    ]
+  },
+  {
+    "index": 167,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H167",
+    "unit": 5,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      29
+    ]
+  },
+  {
+    "index": 168,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H168",
+    "unit": 5,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      29
+    ]
+  },
+  {
+    "index": 169,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H169",
+    "unit": 5,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      31
+    ]
+  },
+  {
+    "index": 170,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H170",
+    "unit": 5,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      31
+    ]
+  },
+  {
+    "index": 171,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H171",
+    "unit": 5,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      31
+    ]
+  },
+  {
+    "index": 172,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H172",
+    "unit": 5,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      35
+    ]
+  },
+  {
+    "index": 173,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H173",
+    "unit": 5,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      35
+    ]
+  },
+  {
+    "index": 174,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H174",
+    "unit": 5,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      35
+    ]
+  },
+  {
+    "index": 175,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H175",
+    "unit": 6,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      36
+    ]
+  },
+  {
+    "index": 176,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H176",
+    "unit": 6,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      36
+    ]
+  },
+  {
+    "index": 177,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H177",
+    "unit": 6,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      38
+    ]
+  },
+  {
+    "index": 178,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H178",
+    "unit": 6,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      38
+    ]
+  },
+  {
+    "index": 179,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H179",
+    "unit": 6,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      38
+    ]
+  },
+  {
+    "index": 180,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H180",
+    "unit": 6,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      42
+    ]
+  },
+  {
+    "index": 181,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H181",
+    "unit": 6,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      42
+    ]
+  },
+  {
+    "index": 182,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H182",
+    "unit": 6,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      42
+    ]
+  },
+  {
+    "index": 183,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H183",
+    "unit": 7,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      43
+    ]
+  },
+  {
+    "index": 184,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H184",
+    "unit": 7,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      43
+    ]
+  },
+  {
+    "index": 185,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H185",
+    "unit": 7,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      45
+    ]
+  },
+  {
+    "index": 186,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H186",
+    "unit": 7,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      45
+    ]
+  },
+  {
+    "index": 187,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H187",
+    "unit": 7,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      45
+    ]
+  },
+  {
+    "index": 188,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H188",
+    "unit": 7,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      49
+    ]
+  },
+  {
+    "index": 189,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H189",
+    "unit": 7,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      49
+    ]
+  },
+  {
+    "index": 190,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H190",
+    "unit": 7,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      49
+    ]
+  },
+  {
+    "index": 191,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H191",
+    "unit": 8,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      50
+    ]
+  },
+  {
+    "index": 192,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H192",
+    "unit": 8,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      50
+    ]
+  },
+  {
+    "index": 193,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H193",
+    "unit": 8,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      52
+    ]
+  },
+  {
+    "index": 194,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H194",
+    "unit": 8,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      52
+    ]
+  },
+  {
+    "index": 195,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H195",
+    "unit": 8,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      52
+    ]
+  },
+  {
+    "index": 196,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H196",
+    "unit": 8,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      56
+    ]
+  },
+  {
+    "index": 197,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H197",
+    "unit": 8,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      56
+    ]
+  },
+  {
+    "index": 198,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H198",
+    "unit": 8,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      56
+    ]
+  },
+  {
+    "index": 199,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H199",
+    "unit": 9,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      57
+    ]
+  },
+  {
+    "index": 200,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H200",
+    "unit": 9,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      57
+    ]
+  },
+  {
+    "index": 201,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H201",
+    "unit": 9,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      59
+    ]
+  },
+  {
+    "index": 202,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H202",
+    "unit": 9,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      59
+    ]
+  },
+  {
+    "index": 203,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H203",
+    "unit": 9,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      59
+    ]
+  },
+  {
+    "index": 204,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H204",
+    "unit": 9,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      63
+    ]
+  },
+  {
+    "index": 205,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H205",
+    "unit": 9,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      63
+    ]
+  },
+  {
+    "index": 206,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H206",
+    "unit": 9,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      63
+    ]
+  },
+  {
+    "index": 207,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H207",
+    "unit": 10,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      64
+    ]
+  },
+  {
+    "index": 208,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H208",
+    "unit": 10,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      64
+    ]
+  },
+  {
+    "index": 209,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H209",
+    "unit": 10,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      66
+    ]
+  },
+  {
+    "index": 210,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H210",
+    "unit": 10,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      66
+    ]
+  },
+  {
+    "index": 211,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H211",
+    "unit": 10,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      66
+    ]
+  },
+  {
+    "index": 212,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H212",
+    "unit": 10,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      70
+    ]
+  },
+  {
+    "index": 213,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H213",
+    "unit": 10,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      70
+    ]
+  },
+  {
+    "index": 214,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H214",
+    "unit": 10,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      70
+    ]
+  },
+  {
+    "index": 215,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H215",
+    "unit": 11,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      71
+    ]
+  },
+  {
+    "index": 216,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H216",
+    "unit": 11,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      71
+    ]
+  },
+  {
+    "index": 217,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H217",
+    "unit": 11,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      73
+    ]
+  },
+  {
+    "index": 218,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H218",
+    "unit": 11,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      73
+    ]
+  },
+  {
+    "index": 219,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H219",
+    "unit": 11,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      73
+    ]
+  },
+  {
+    "index": 220,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H220",
+    "unit": 11,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      77
+    ]
+  },
+  {
+    "index": 221,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H221",
+    "unit": 11,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      77
+    ]
+  },
+  {
+    "index": 222,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H222",
+    "unit": 11,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      77
+    ]
+  },
+  {
+    "index": 223,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H223",
+    "unit": 12,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      78
+    ]
+  },
+  {
+    "index": 224,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H224",
+    "unit": 12,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      78
+    ]
+  },
+  {
+    "index": 225,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H225",
+    "unit": 12,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      80
+    ]
+  },
+  {
+    "index": 226,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H226",
+    "unit": 12,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      80
+    ]
+  },
+  {
+    "index": 227,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H227",
+    "unit": 12,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      80
+    ]
+  },
+  {
+    "index": 228,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H228",
+    "unit": 12,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      84
+    ]
+  },
+  {
+    "index": 229,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H229",
+    "unit": 12,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      84
+    ]
+  },
+  {
+    "index": 230,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H230",
+    "unit": 12,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      84
+    ]
+  },
+  {
+    "index": 231,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H231",
+    "unit": 13,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      85
+    ]
+  },
+  {
+    "index": 232,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H232",
+    "unit": 13,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      85
+    ]
+  },
+  {
+    "index": 233,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H233",
+    "unit": 13,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      87
+    ]
+  },
+  {
+    "index": 234,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H234",
+    "unit": 13,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      87
+    ]
+  },
+  {
+    "index": 235,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H235",
+    "unit": 13,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      87
+    ]
+  },
+  {
+    "index": 236,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H236",
+    "unit": 13,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      91
+    ]
+  },
+  {
+    "index": 237,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H237",
+    "unit": 13,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      91
+    ]
+  },
+  {
+    "index": 238,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H238",
+    "unit": 13,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      91
+    ]
+  },
+  {
+    "index": 239,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H239",
+    "unit": 14,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      92
+    ]
+  },
+  {
+    "index": 240,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H240",
+    "unit": 14,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      92
+    ]
+  },
+  {
+    "index": 241,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H241",
+    "unit": 14,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      94
+    ]
+  },
+  {
+    "index": 242,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H242",
+    "unit": 14,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      94
+    ]
+  },
+  {
+    "index": 243,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H243",
+    "unit": 14,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      94
+    ]
+  },
+  {
+    "index": 244,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H244",
+    "unit": 14,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      98
+    ]
+  },
+  {
+    "index": 245,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H245",
+    "unit": 14,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      98
+    ]
+  },
+  {
+    "index": 246,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H246",
+    "unit": 14,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      98
+    ]
+  },
+  {
+    "index": 247,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H247",
+    "unit": 15,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      99
+    ]
+  },
+  {
+    "index": 248,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H248",
+    "unit": 15,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      99
+    ]
+  },
+  {
+    "index": 249,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H249",
+    "unit": 15,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      101
+    ]
+  },
+  {
+    "index": 250,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H250",
+    "unit": 15,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      101
+    ]
+  },
+  {
+    "index": 251,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H251",
+    "unit": 15,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      101
+    ]
+  },
+  {
+    "index": 252,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H252",
+    "unit": 15,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      105
+    ]
+  },
+  {
+    "index": 253,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H253",
+    "unit": 15,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      105
+    ]
+  },
+  {
+    "index": 254,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H254",
+    "unit": 15,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      105
+    ]
+  },
+  {
+    "index": 255,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H255",
+    "unit": 16,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      106
+    ]
+  },
+  {
+    "index": 256,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H256",
+    "unit": 16,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      106
+    ]
+  },
+  {
+    "index": 257,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H257",
+    "unit": 16,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      108
+    ]
+  },
+  {
+    "index": 258,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H258",
+    "unit": 16,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      108
+    ]
+  },
+  {
+    "index": 259,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H259",
+    "unit": 16,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      108
+    ]
+  },
+  {
+    "index": 260,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H260",
+    "unit": 16,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      112
+    ]
+  },
+  {
+    "index": 261,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H261",
+    "unit": 16,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      112
+    ]
+  },
+  {
+    "index": 262,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H262",
+    "unit": 16,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      112
+    ]
+  },
+  {
+    "index": 263,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H263",
+    "unit": 17,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      113
+    ]
+  },
+  {
+    "index": 264,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H264",
+    "unit": 17,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      113
+    ]
+  },
+  {
+    "index": 265,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H265",
+    "unit": 17,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      115
+    ]
+  },
+  {
+    "index": 266,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H266",
+    "unit": 17,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      115
+    ]
+  },
+  {
+    "index": 267,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H267",
+    "unit": 17,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      115
+    ]
+  },
+  {
+    "index": 268,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H268",
+    "unit": 17,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      119
+    ]
+  },
+  {
+    "index": 269,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H269",
+    "unit": 17,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      119
+    ]
+  },
+  {
+    "index": 270,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H270",
+    "unit": 17,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      119
+    ]
+  },
+  {
+    "index": 271,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H271",
+    "unit": 18,
+    "template": "internal",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "internal:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      120
+    ]
+  },
+  {
+    "index": 272,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H272",
+    "unit": 18,
+    "template": "internal",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "internal:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      120
+    ]
+  },
+  {
+    "index": 273,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H273",
+    "unit": 18,
+    "template": "internal",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      122
+    ]
+  },
+  {
+    "index": 274,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H274",
+    "unit": 18,
+    "template": "internal",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      122
+    ]
+  },
+  {
+    "index": 275,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H275",
+    "unit": 18,
+    "template": "internal",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "internal:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      122
+    ]
+  },
+  {
+    "index": 276,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H276",
+    "unit": 18,
+    "template": "internal",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      126
+    ]
+  },
+  {
+    "index": 277,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H277",
+    "unit": 18,
+    "template": "internal",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      126
+    ]
+  },
+  {
+    "index": 278,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H278",
+    "unit": 18,
+    "template": "internal",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "internal:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      126
+    ]
+  },
+  {
+    "index": 279,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H279",
+    "unit": 19,
+    "template": "tail",
+    "role": "backbone_head_C_H1",
+    "equivalence_key": "tail:backbone_head_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      127
+    ]
+  },
+  {
+    "index": 280,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H280",
+    "unit": 19,
+    "template": "tail",
+    "role": "backbone_head_C_H2",
+    "equivalence_key": "tail:backbone_head_C_H2",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      127
+    ]
+  },
+  {
+    "index": 281,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H281",
+    "unit": 19,
+    "template": "tail",
+    "role": "backbone_substituted_C_H1",
+    "equivalence_key": "tail:backbone_substituted_C_H1",
+    "stage2_free": false,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      128
+    ]
+  },
+  {
+    "index": 282,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H282",
+    "unit": 19,
+    "template": "tail",
+    "role": "alpha_methyl_C_H1",
+    "equivalence_key": "tail:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      129
+    ]
+  },
+  {
+    "index": 283,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H283",
+    "unit": 19,
+    "template": "tail",
+    "role": "alpha_methyl_C_H2",
+    "equivalence_key": "tail:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      129
+    ]
+  },
+  {
+    "index": 284,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H284",
+    "unit": 19,
+    "template": "tail",
+    "role": "alpha_methyl_C_H3",
+    "equivalence_key": "tail:alpha_methyl_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      129
+    ]
+  },
+  {
+    "index": 285,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H285",
+    "unit": 19,
+    "template": "tail",
+    "role": "methoxy_C_H1",
+    "equivalence_key": "tail:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      133
+    ]
+  },
+  {
+    "index": 286,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H286",
+    "unit": 19,
+    "template": "tail",
+    "role": "methoxy_C_H2",
+    "equivalence_key": "tail:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      133
+    ]
+  },
+  {
+    "index": 287,
+    "element": "H",
+    "atomic_number": 1,
+    "atom_name": "H287",
+    "unit": 19,
+    "template": "tail",
+    "role": "methoxy_C_H3",
+    "equivalence_key": "tail:methoxy_C_H",
+    "stage2_free": true,
+    "formal_charge": 0,
+    "cip": null,
+    "neighbors": [
+      133
+    ]
+  }
+]

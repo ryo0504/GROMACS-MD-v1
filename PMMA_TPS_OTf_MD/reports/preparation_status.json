@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-28",
+  "prepared": [
+    "initial_structures",
+    "atom_maps",
+    "Gaussian16_opt_and_MK_ESP_templates",
+    "RESP_constraint_templates",
+    "configuration",
+    "MDP_and_zero_step_preflight",
+    "server_processing_scripts",
+    "Japanese_lab_instructions_and_explanation"
+  ],
+  "not_run": [
+    "real_molecule_Gaussian16",
+    "real_molecule_ESP",
+    "real_molecule_RESP",
+    "GAFF2",
+    "Amber_GROMACS_energy_check",
+    "packing",
+    "MD",
+    "PBS"
+  ],
+  "spec_sha256": "15177d63bc82bb948f4940bb094d2f00b5307342597547351bc1755ff09577a0",
+  "lightweight_tests": {
+    "passed": 7,
+    "skipped": 2,
+    "real_molecule_data_used_for_RESP_fit": false
+  },
+  "esp_method": "Gaussian16 MK; user-approved change from v2",
+  "server_resources": "UNCONFIRMED"
+}
